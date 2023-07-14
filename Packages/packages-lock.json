@@ -52,6 +52,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.xjine.imageeffect_base": {
+      "version": "https://github.com/XJINE/Unity_ImageEffectBase.git?path=Assets/Packages/ImageEffectBase",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6f584eadfdce98d4ba1fa3c2d69f9e7c4467d159"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
