@@ -3,8 +3,8 @@
     Properties
     {
         [HideInInspector]
-        _MainTex("Texture", 2D) = "white" {}
-        _Shift("(Hue, Saturation, Value, Shift)", Vector) = (0, 0, 0, 1)
+        _MainTex("Texture",                         2D    ) = "white" {}
+        _Shift  ("(Hue, Saturation, Value, Shift)", Vector) = (0, 0, 0, 1)
     }
     SubShader
     {
@@ -13,7 +13,7 @@
             CGPROGRAM
 
             #include "UnityCG.cginc"
-            #include "Assets/Packages/Shaders/ColorCollection.cginc"
+            #include "Packages/com.xjine.color_collection_shader/ColorCollection.cginc"
 
             #pragma vertex vert_img
             #pragma fragment frag

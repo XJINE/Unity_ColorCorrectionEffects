@@ -13,7 +13,7 @@
             CGPROGRAM
 
             #include "UnityCG.cginc"
-            #include "Assets/Packages/Shaders/ColorCollection.cginc"
+            #include "Packages/com.xjine.color_collection_shader/ColorCollection.cginc"
 
             #pragma vertex vert_img
             #pragma fragment frag

@@ -6,9 +6,9 @@ public class HsvShift : ImageEffectBase
 {
     #region Field
 
-    public Vector4 shift = new Vector4(0, 0, 0, 1);
+    public Vector4 shift = new (0, 0, 0, 1);
 
-    protected static int PropIdShift = 0;
+    private static readonly int PropIdShift = 0;
 
     #endregion Field
 
@@ -21,7 +21,7 @@ public class HsvShift : ImageEffectBase
 
     protected override void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        base.material.SetVector(PropIdShift, this.shift);
+        material.SetVector(PropIdShift, shift);
         base.OnRenderImage(source, destination);
     }
 

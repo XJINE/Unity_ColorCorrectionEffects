@@ -52,6 +52,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.xjine.color_collection_shader": {
+      "version": "https://github.com/XJINE/Unity_ColorCollectionShader.git?path=Assets/Packages/ColorCollectionShader",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "52723b8cb2940a551c7035b10760f2d72967fb3a"
+    },
     "com.xjine.imageeffect_base": {
       "version": "https://github.com/XJINE/Unity_ImageEffectBase.git?path=Assets/Packages/ImageEffectBase",
       "depth": 0,

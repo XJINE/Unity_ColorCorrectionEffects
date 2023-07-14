@@ -6,11 +6,11 @@ public class ColorCollection : ImageEffectBase
 {
     #region Field
 
-    public Vector4 bscParams = new Vector4(1, 1, 1, 0);
-    public Vector4 hsvShift  = new Vector4(0, 0, 0, 1);
+    public Vector4 bscParams = new (1, 1, 1, 0);
+    public Vector4 hsvShift  = new (0, 0, 0, 1);
 
-    protected static int PropIdBscParams = 0;
-    protected static int PropIdHsvShift = 0;
+    private static readonly int PropIdBscParams = 0;
+    private static readonly int PropIdHsvShift  = 0;
 
     #endregion Field
 
@@ -24,8 +24,8 @@ public class ColorCollection : ImageEffectBase
 
     protected override void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        base.material.SetVector(PropIdBscParams, this.bscParams);
-        base.material.SetVector(PropIdHsvShift, this.hsvShift);
+        material.SetVector(PropIdBscParams, bscParams);
+        material.SetVector(PropIdHsvShift,  hsvShift);
         base.OnRenderImage(source, destination);
     }
 

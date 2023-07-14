@@ -3,7 +3,7 @@
     Properties
     {
         [HideInInspector]
-        _MainTex("Texture", 2D) = "white" {}
+        _MainTex  ("Texture",                               2D    ) = "white" {}
         _BscParams("(Brightness, Saturation, Contrast, _)", Vector) = (1, 1, 1, 0)
         _HsvShift ("(Hue, Saturation, Value, Shift)",       Vector) = (0, 0, 0, 1)
     }
@@ -14,7 +14,7 @@
             CGPROGRAM
 
             #include "UnityCG.cginc"
-            #include "Assets/Packages/Shaders/ColorCollection.cginc"
+            #include "Packages/com.xjine.color_collection_shader/ColorCollection.cginc"
 
             #pragma vertex vert_img
             #pragma fragment frag
