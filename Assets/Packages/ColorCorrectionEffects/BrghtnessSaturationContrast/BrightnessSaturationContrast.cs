@@ -2,11 +2,11 @@
 
 [ExecuteAlways]
 [RequireComponent(typeof(Camera))]
-public class BrghtnessSaturationContrast : ImageEffectBase
+public class BrightnessSaturationContrast : ImageEffectBase
 {
     #region Field
 
-    public Vector4 @params = new Vector4(1, 1, 1, 0);
+    public Vector4 @params = new (1, 1, 1, 0);
 
     protected static int PropIdParams = 0;
 
@@ -14,14 +14,14 @@ public class BrghtnessSaturationContrast : ImageEffectBase
 
     #region Method
 
-    static BrghtnessSaturationContrast()
+    static BrightnessSaturationContrast()
     {
         PropIdParams = Shader.PropertyToID("_Params");
     }
 
     protected override void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        base.material.SetVector(PropIdParams, this.@params);
+        material.SetVector(PropIdParams, @params);
         base.OnRenderImage(source, destination);
     }
 

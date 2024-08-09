@@ -1,4 +1,4 @@
-﻿Shader "ImageEffect/CollorCollection"
+﻿Shader "ImageEffect/ColorCorrection"
 {
     Properties
     {
@@ -14,7 +14,7 @@
             CGPROGRAM
 
             #include "UnityCG.cginc"
-            #include "Packages/com.xjine.color_collection_shader/ColorCollection.cginc"
+            #include "Packages/com.xjine.color_correction_shader/ColorCorrection.cginc"
 
             #pragma vertex vert_img
             #pragma fragment frag
@@ -26,7 +26,7 @@
 
             fixed4 frag(v2f_img input) : SV_Target
             {
-                return ColorCollection(tex2D(_MainTex, input.uv), _BscParams, _HsvShift);
+                return ColorCorrection(tex2D(_MainTex, input.uv), _BscParams, _HsvShift);
             }
 
             ENDCG

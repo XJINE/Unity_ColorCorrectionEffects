@@ -15,9 +15,9 @@
             CGPROGRAM
 
             #include "UnityCG.cginc"
-            #include "Packages/com.xjine.color_collection_shader/ColorCollection.cginc"
+            #include "Packages/com.xjine.color_correction_shader/ColorCorrection.cginc"
 
-            #pragma vertex vert_img
+            #pragma vertex   vert_img
             #pragma fragment frag
             #pragma shader_feature _GRAYSCALETYPE_NORMAL _GRAYSCALETYPE_REC601 _GRAYSCALETYPE_REC709
 

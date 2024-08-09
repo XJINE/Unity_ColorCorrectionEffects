@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BrghtnessSaturationContrast
-  m_Shader: {fileID: 4800000, guid: 576b8d3746b866047a934bf1de5484eb, type: 3}
+  m_Name: ColorCorrection
+  m_Shader: {fileID: 4800000, guid: 61ba80392b0d21446b9c38b04d3f09ca, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -81,7 +81,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _BscParams: {r: 0.9, g: 1, b: 1.5, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Params: {r: 1.2, g: 2, b: 0.3, a: 0}
+    - _HsvShift: {r: 0.2, g: 0, b: -0.1, a: 1}
+    - _Params: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

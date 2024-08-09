@@ -2,7 +2,7 @@
 
 [ExecuteAlways]
 [RequireComponent(typeof(Camera))]
-public class ColorCollection : ImageEffectBase
+public class ColorCorrection : ImageEffectBase
 {
     #region Field
 
@@ -16,7 +16,7 @@ public class ColorCollection : ImageEffectBase
 
     #region Method
 
-    static ColorCollection()
+    static ColorCorrection()
     {
         PropIdBscParams = Shader.PropertyToID("_BscParams");
         PropIdHsvShift  = Shader.PropertyToID("_HsvShift");
